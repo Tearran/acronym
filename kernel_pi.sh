@@ -19,8 +19,8 @@ https://sunnyspot.org/asciiart/gallery/startrek.html
           __|  `-______-'  |__
              -,____  ____,-
                ---'  `---
-    This will guide you through the steps
-    to compile a RPI kernel
+  This will guide you through the steps
+        to compile a RPI kernel
 
 Do you wish to continue(Y/n)?
 
@@ -37,33 +37,23 @@ sudo apt update
 while true; do
  cat << "EOF"
 
-      Kernel Configuration
-             TR-560
- ________.--------------.________
-|  ||__| [_]|                    |
-|  |     [_]|                    |
-|__|_____[_]|____________________|
-| |PWR |  | F1 |-DATA  | I || E ||
-| |STBY|  |_F2_| SENSE-|___||___||
-|_|[__]|_________________________|
-|           ___________________  |
-| [ALPHA]  |                   | |
-| [BETA ]  |                   | |
-| [GAMMA]  |                   | |
-| [DELTA]  |                   | |
-|  _____   |                   | |
-| |^ H B|  |___________________| |
-| || H ||  .-DEVICE INPUT--.  _  |
-| || H ||  |               | [_] |
-| || H ||   GEO   MET   BIO  [_] |
-| |A_H_v|  [___] [___] [___] [_] |
-|________________________________|
-|__[][][][]____________[][][][]__|
-|  ____________________________  |
-| |.-COM XMISSION---.   ______ | |
-| | ________________  E|\ __ /|| |
-| ||ACCEPT|INTERSHIP| M| |  | || |
-
+      
+         _mmm_                      
+        mmmmmmmm     ,"""""""""""""""""""""""".
+       @p~qp~~qMb    | Kernel Configuration 01|
+       | @||@) m|   _;..........................'
+       @,----.JM| -'
+      mm^\__/  mmm
+     mmm        mmmi
+    mmM          mmmm
+   MMM            mmMM
+   MMM            MMMM
+   MMM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' 
 
 Installing git bc bison flex libssl-dev make 
 
@@ -85,31 +75,23 @@ while true; do
 clear
  cat << "EOF"
 
-                  .',.                  
-                 'dKKO:.                
-                ,OX:::~o.               
-               ;O::::::::.              
-              ;0:::::::::d.             
-             ,~~~:0::~~dO~d.            
-            '~:O;.o~NO:.l~;l.           
-           .o;;c;:dOOO;;;::0;           
-           :0:;;......;O:::::'          
-    .';:``o0:::;Odll`l:0:::::;l`-:,.    
-  .-o-;'.'d::::;;:;O;;:O;::::O;..,-ol.  
- .dd.    ';::::;;l----o0::::N;-    .do. 
- .od'. ..o;::::;-,,,,,;d0:::::;;...::-. 
-  .:lo:O0;::::::;,,,,,,:;::::::;0;o:'   
-     .-;:::::::0o:,,,;:d0:::::::;;.     
-       ';N::::::;0;dooodO;:::::0;       
-       ,O::::::;Oo:'..  .l;;0:::l       
-       l::::::;;.        .oO-:oOd.      
-      .:::;O;0;           '::' ..       
-      ';Oo;lOl.            ;O:.         
-      .,. ,;:.              -0d.        
-      .,',:0:               .o;:;,,.    
-     .::;;:d.                ,O:::;-    
-      '-d:o'                  ;ool;.   
-
+         
+         _mmm_                      
+        mmmmmmmm     ,"""""""""""""""""""""""".
+       @p~qp~~qMb    | Kernel Configuration 02|
+       | @||@) m|   _;........................'
+       @,----.mm| -'
+      mm^\__/  mmm
+     mmm        mmmi
+    mmM          mmmm
+   MMM            mmMM
+   MMM            MMMM
+   MMM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \/\
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' 
 
 Download Kernel source from
 https://github.com/raspberrypi/linux
@@ -170,36 +152,24 @@ make bcmrpi_defconfig
 
 while true; do
  cat << "EOF"
-by bord Tearran 
-                                                 
-                       ...                      
-                    ...:S%:;.                   
-               ..  ..: tt%.;:.. .               
-              :8...8t%tt%SSS8:..%;.             
-           ...: X@;:;t%%SXXXS;%.XX.8t           
-          .S;tt8...:%%SSXXXX@tS:t:.8.::.        
-       . .: SS:: :%t%SSX%X%SX%8X: ::  :         
-       ;@ ;%;:  :%;SSXSSSt%%8%X...  @. ..       
-      .8 X%:... .tSSXX%StX%;%%X@:   ;;...       
-    ..:.:8   . @%SXXSXStt%@%%S;..:     X..      
-     tt.t    .:.;XX@XS%X%:%%S;%t:8     %.8%     
-   ... 8.     :t@@X@S%S%%StSt;;;..t     @.@:    
-   ..: X     :.t@8@X%SSt%t%;;:tt...    .t.X:.   
-   .:: @:    8 8@@XX%8%;;t;;:t::...%.   :.S:    
-   ... 8t   :t%X@SSSS;;St;;:t::..@.S:.  :.t.    
-   ... 8. . .@XX%X8%%S%;;:%:;.;.X:.8    %8X:    
-   ..:@X@;. .XX@XSStStt;:%::...X:888t: .88S:    
-      ; @t.;88@@%%tt:t:::t8@%S8:8.88@: S %%.    
-     .t8%;::@SX%S%%;;:SX8t;;::::88888.t88%.     
-     .:%t;:S8XSS%t8%%%8;:..    . @888888t       
-      .;t:SXXSStttt;8....       ::S @88.        
-       .:;;SS%t8SXtX.            %888@:         
-        . 88%Xt%;X8S;:.   .:;%@8888;%8.         
-        .::8S%t%;:....X8888.8.888% .;X%.        
-         ..:S:8 t888888@8@S@8%;%;. .:@S.        
-        . .X;;: :;; ... . .t:...    :::         
-          8@;    .                              
 
+                                                 
+         _mmm_                      
+        mmmmmmmm     ,"""""""""""""""""""""""".
+       @p~qp~~qMb    | Kernel Configuration 03|
+       | @||@) m|   _;........................'
+       @,----.JM| -'
+      mm^\__/  mmm
+     mmm        mmmi
+    mmM          mmmm
+   MMM            mmMM
+   MMM            MMMM
+   MMM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' 
                                       
                                       
 for setting
@@ -228,20 +198,22 @@ make menuconfig
 while true; do
  cat << "EOF"
  
-Star Trek (1971 video game):
-On or shortly after Unix epoch time.
- 
-quadrent      3/1 
- .  .  .  .  .  .  .  .  condition green                                                                        
- .  .  .  .  .  .  .  .                                                                        
- .  .  .  .  .  .  .  .                                                                        
- .  .  .  .  .  .  .  .                                                                      
- .  .  .  .  .  .  .  .       torpedows                                                                    
- .  .  .  .  .  .  .  .         energy                                                                   
- .  .  .  .  .  .  .  .        shields                                                                     
- .  .  .  .  .  .  .  .       klingons        
-
-Command                                                              
+         _mmm_                      
+        mmmmmmmm     ,"""""""""""""""""""""""".
+       @p~qp~~qMb    | Kernel Configuration 04|
+       | @||@) m|   _;........................'
+       @,----.JM| -'
+      mm^\__/  mmm
+     mmm        mmmi
+    mmM          mmmm
+   MMM            mmMM
+   MMM            MMMM
+   MMM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--'                                                        
                                                                                                   
 Build kernel
 continue(Y/n)?
