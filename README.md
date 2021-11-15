@@ -12,8 +12,10 @@ Raspberry Pi B+, Zero, and Zero W.
 ## Tutorials
 
 - General Purpos Input Output (GPIO)
-  - [GPIOzero Experiment](https://github.com/Tearran/acronym/wiki/gpiozero-Experiment)
-- Kernel building on a Pi: 
-  - [Zero Kernel Experiment](https://github.com/Tearran/acronym/wiki/Zero-kernel-experiment)
+  - [GPIOzero](https://gpiozero.readthedocs.io/en/stable/recipes.html) -  interface GPIO devices 
+    - [The Experiment](https://github.com/Tearran/acronym/wiki/gpiozero-Experiment)
+- Kernel building: 
+    - Tutorial [The Linux kernel](https://www.raspberrypi.com/documentation/computers/linux_kernel.html)
+    - [The Experiment](https://github.com/Tearran/acronym/wiki/Zero-kernel-experiment)
 - OS building: 
   - [BuildRoot Experiment](https://github.com/Tearran/acronym/wiki/Buildroot-Experiment)
