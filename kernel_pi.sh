@@ -19,7 +19,8 @@ https://sunnyspot.org/asciiart/gallery/startrek.html
           __|  `-______-'  |__
              -,____  ____,-
                ---'  `---
-    This will step you through the ...
+    This will guide you through the steps
+    to compile a RPI kernel
 
 Do you wish to continue(Y/n)?
 
