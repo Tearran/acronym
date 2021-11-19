@@ -20,8 +20,8 @@ Raspberry Pi B+, Zero, and Zero W.
         -  Referance [i2c](https://i2c.wiki.kernel.org/index.php/I2C_Tools) - I2C tools 
         -  Referance I2C [Adressess](https://github.com/Tearran/acronym/wiki/i2c)
 -   Kernel building:
-    -   Tutorial - [The Linux kernel](https://www.raspberrypi.com/documentation/computers/linux_kernel.html)
-        -   [The Experiment](https://github.com/Tearran/acronym/wiki/Experiment-zero-kernel)
+
+    -   [The Experiment](https://github.com/Tearran/acronym/wiki/Experiment-zero-kernel)
         -   [0kernelexperiment.sh](https://github.com/Tearran/acronym/blob/master/0kernelexperiment.sh) 
             -   Script attempts to replicate experiment
             -   Installs build requierment
@@ -30,8 +30,9 @@ Raspberry Pi B+, Zero, and Zero W.
             -   Offers opertunity to add/remove componits of the kernel
             -   Bulds the kernel "warning 48 hour to compile on pi zero"
             -   Offers opertunity to upgrade current kernel to new and reboot
-            - ```bash wget https://raw.githubusercontent.com/Tearran/acronym/master/0kernelexperiment.sh``` 
-            
+            - ``` wget https://raw.githubusercontent.com/Tearran/acronym/master/0kernelexperiment.sh``` 
+            -  Tutorial - [The Linux kernel](https://www.raspberrypi.com/documentation/computers/linux_kernel.html)
+
        
 -   OS building:
     -   [Bulidroot](https://buildroot.org/) 
