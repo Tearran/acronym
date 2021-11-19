@@ -1,9 +1,9 @@
 #/bin/bash
 clear
-
+# thank to https://sunnyspot.org/asciiart/gallery/startrek.html
 while true; do
  cat << "EOF"
-https://sunnyspot.org/asciiart/gallery/startrek.html
+
                  ______
               _-' .   .`-_
           |/ /  .. . '   .\ \|
