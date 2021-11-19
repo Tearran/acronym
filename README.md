@@ -35,5 +35,5 @@ Raspberry Pi B+, Zero, and Zero W.
 
        
 -   OS building:
-    -   [Bulidroot](https://buildroot.org/) 
-        -   [The Experiment](https://github.com/Tearran/acronym/wiki/Buildroot-Experiment)
+    -   [The Experiment](https://github.com/Tearran/acronym/wiki/Buildroot-Experiment)
+        -   [Bulidroot home](https://buildroot.org/)    
