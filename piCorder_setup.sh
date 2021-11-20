@@ -45,6 +45,7 @@ printf "\nDownloading:  Requrierd tools\n"
 sudo apt purge python3-numpy python3-pandas python3-pygame python3-colour
 
 sudo apt update
+sudo apt install -y git python3-pip
 sudo apt install -y git libatlas-base-dev libopenjp2-7-dev libsdl2-dev libtiff5 libsdl-ttf2.0-dev 
 sudo apt install -y libsdl-gfx1.2-5 libsdl-image1.2 libsdl-kitchensink1 libsdl-mixer1.2 libsdl-sound1.2 libsdl-ttf2.0-0 libsdl1.2debian libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0
 printf "Enabling  %s & %s\n"  i2c spi
