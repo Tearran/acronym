@@ -6,19 +6,23 @@ while true; do
 https://sunnyspot.org/asciiart/gallery/startrek.html
 
 
-                 ______
-              _-' .   .`-_
-          |/ /  .. . '   .\ \|
-         |/ /            ..\ \|
-       \|/ |: .   ._|_ .. . | \|/
-        \/ |   _|_ .| . .:  | \/
-       \ / |.   |  .  .    .| \ /
-        \||| .  . .  _|_   .|||/
-       \__| \  . :.  .|.  ./ |__/
-         __| \_  .    .. _/ |__
-          __|  `-______-'  |__
-             -,____  ____,-
-               ---'  `---
+      
+         _mmm_                      
+        mmmmmmmm     ,"""""""""""""""""""""""".
+       @p~qp~~qMb    | Kernel Configuration 00|
+       | @||@) m|   _;........................'
+       @,----.JM| -'
+      mm^\__/  mmm
+     mmm        mmmi
+    mmM          mmmm
+   MMM            mmMM
+   MMM            MMMM
+   MMM            MMMM
+ __| ".        |\dS"qML
+ |    `.       | `' \Zq
+_)      \.___.,|     .'
+\____   )MMMMMM|   .'
+     `-'       `--' 
   This will guide you through the steps
         to compile a RPI kernel
 
@@ -41,7 +45,7 @@ while true; do
          _mmm_                      
         mmmmmmmm     ,"""""""""""""""""""""""".
        @p~qp~~qMb    | Kernel Configuration 01|
-       | @||@) m|   _;..........................'
+       | @||@) m|   _;........................'
        @,----.JM| -'
       mm^\__/  mmm
      mmm        mmmi
