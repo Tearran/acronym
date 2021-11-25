@@ -1,0 +1,5 @@
+Addresses,Type,Name
+0x3C,Display,SSD1306
+0x60,Radio,TEA5767
+0x70,I²C Multiplex,TCA9548
+0x76,Eviromental,BMPxxx
