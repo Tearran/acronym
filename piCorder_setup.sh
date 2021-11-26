@@ -71,7 +71,7 @@ FILE=~/picorderOS/requirements.txt
 if [ -f "$FILE" ]; then
     echo "$FILE exists."
     echo "installing libraries from requirements.txt"
-    #python3 -m pip install -r  ~/picorderOS/requirements.txt
+    python3 -m pip install -r  ~/picorderOS/requirements.txt
 else 
     cat << EOF >> requirements.txt
 adafruit_amg88xx==1.4.3
@@ -100,7 +100,7 @@ wifi==0.3.8
 EOF
     echo "$FILE exists."
     echo "installing libraries from requirements.txt"
-    #python3 -m pip install -r  requirements.txt
+    python3 -m pip install -r  requirements.txt
 fi
 
 
