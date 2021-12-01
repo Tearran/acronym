@@ -1,5 +1,5 @@
 # Welcome to Acronym:
-
+Our discord https://discord.gg/gVpsgwqB6U
 Logo 
 
 > Project A.C.R.O.N.Y.M:
