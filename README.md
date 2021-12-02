@@ -16,9 +16,9 @@ Raspberry Pi B+, Zero, and Zero W.
 
 -   General Purpos Input Output (GPIO)
     -   [The Experiment](https://github.com/Tearran/acronym/wiki/Experiment-gpiozero)
-        -  Referance [GPIOzero](https://gpiozero.readthedocs.io/en/stable/recipes.html) -  interface GPIO devices  
-        -  Referance [i2c](https://i2c.wiki.kernel.org/index.php/I2C_Tools) - I2C tools 
-        -  Referance I2C [Adressess](https://github.com/Tearran/acronym/wiki/i2c)
+        -  Referance - [GPIOzero](https://gpiozero.readthedocs.io/en/stable/recipes.html) -  interface GPIO devices  
+        -  Referance - [I2C tools](https://i2c.wiki.kernel.org/index.php/I2C_Tools)  
+        -  Referance - [I2C Adressess](https://github.com/Tearran/acronym/wiki/i2c)
 -   Kernel building:
 
     -   [The Experiment](https://github.com/Tearran/acronym/wiki/Experiment-zero-kernel)
@@ -30,10 +30,11 @@ Raspberry Pi B+, Zero, and Zero W.
             -   Offers opertunity to add/remove componits of the kernel
             -   Bulds the kernel "warning 48 hour to compile on pi zero"
             -   Offers opertunity to upgrade current kernel to new and reboot
-            - ``` wget https://raw.githubusercontent.com/Tearran/acronym/master/0kernelexperiment.sh``` 
+            - ``` wget https://raw.githubusercontent.com/Tearran/acronym/master/0kernelexperiment.sh ``` 
             -  Tutorial - [The Linux kernel](https://www.raspberrypi.com/documentation/computers/linux_kernel.html)
 
        
 -   OS building:
     -   [The Experiment](https://github.com/Tearran/acronym/wiki/Buildroot-Experiment)
+        -   
         -   [Bulidroot home](https://buildroot.org/)    
