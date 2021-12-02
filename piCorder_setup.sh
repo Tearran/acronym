@@ -1,6 +1,6 @@
 #/bin/bash
 clear
-# thank to https://sunnyspot.org/asciiart/gallery/startrek.html
+# thanks to https://sunnyspot.org/asciiart/gallery/startrek.html
 while true; do
  cat << "EOF"
 
@@ -26,7 +26,10 @@ while true; do
 - download piCorderOS
 - Create a piCorderOS/requerments.txt 
 - Install Python Requerments
-- disable all sensors unavalible -- todo finetune metod 
+- todo: i2c scan to disable/enable i2c sensors
+- todo: Offer choice of install 
+   - enduser(binary) 
+   - developer(source) 
 
 Do you wish to continue(Y/n)?
 
@@ -51,7 +54,7 @@ sudo apt install -y libsdl-gfx1.2-5 libsdl-image1.2 libsdl-kitchensink1 libsdl-m
 printf "Enabling  %s & %s\n"  i2c spi
 sudo sed -i -e 's/#dtparam=i2c_arm=on/dtparam=i2c_arm=on/g' /boot/config.txt && sudo sed -i -e 's/#dtparam=spi=on/dtparam=spi=on/g' /boot/config.txt
 
-echo "Expected result:"
+echo "Expected result after kernel reload(reboot):"
 echo "i2c_bcm2835            16384  0"
 echo "i2c_dev                16384  0"
 echo " "
@@ -98,14 +101,16 @@ wifi==0.3.8
 
 
 EOF
-    echo "$FILE exists."
+    echo "$FILE now exists."
     echo "installing libraries from requirements.txt"
     python3 -m pip install -r  requirements.txt
 fi
 
 
-printf "\n This is a dev mode remove for prodution \n"
-sed -i -e 's/self.pc = False/self.pc = True/g' ~/picorderOS/objects.py
+printf "\n Enable/Disable sensor readings \n"
+echo "TODO i2cdetect, "
+
+#sed -i -e 's/self.pc = False/self.pc = True/g' ~/picorderOS/objects.py
 #input_cap1208 = False
 #leds = [False]
 #alarm = [False]
