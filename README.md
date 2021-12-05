@@ -40,3 +40,6 @@ Raspberry Pi B+, Zero, and Zero W.
         -   [Bulidroot home](https://buildroot.org/)
                
     - Editing a Raspbian Image
+
+    - Raspberry Pi boot to Chromium
+         - setup
