@@ -8,9 +8,11 @@ Logo
 >  A collection of tutorials, projects, and resources for sensors on Linux.
 >   
 
-## Target systems:
-
+## Target Single Board Computer:
 Raspberry Pi B+, Zero, and Zero W.
+
+## Target Controlers
+Raspberry PI Pico, Espressif Systems (esp8266, esp32), Arduino
 
 ## Tutorials
 
@@ -43,3 +45,6 @@ Raspberry Pi B+, Zero, and Zero W.
 
     - Raspberry Pi boot to Chromium
          - setup
+
+
+
