@@ -1,81 +1,75 @@
-#!/bin/bash
-
-
+#! /bin/bash
+clear
 export NEWT_COLORS='
 root=white,black
 window=white,black
 textbox=white,black
 title=white,black
 listbox=white,black
-sellistbox=black,blue
+sellistbox=black,yellow
+actsellistbox=black,yellow
 border=black,blue
 actbutton=black,green
 button=white,black'
 
-clear
-echo "=================================="
-echo "     ---- Cut below ----"
-echo ""
-# emulating the hardware on a pc?
-if whiptail --yesno "emulating the hardware on a pc?" 20 60 --defaultno; then
-  echo "pc = no"
+title=" piCorderOs "
+verInfo="022322.1129"
+
+#[EN/US]
+txtHelloWorld=" Hello World: "
+txtexit="Exit "
+txtabout="About "
+txtContinueYN="Continue "
+
+#[Vulcan]
+#txtHelloWorld="Tonk'peh panu  "
+#txtexit="Ruken "
+#txtabout="Pa' nash "
+
+#[placeholders]
+txtMenu01="test embeded Yes No"
+txtMenu02="Menu item 2"
+txtMenu03="Menu item 3"
+txtMenu04="Menu item 4"
+
+
+function myTestFun {
+  
+if (whiptail --fb --title "$title" --yesno "$txtContinueYN." 20 60); then
+  result="User selected Yes, exit status was $?."
 else
-  echo "pc = yes"
+  result="User selected No, exit status was $?."
 fi
 
-# select either tr-108, or tr-109. you must choose only one.
-if whiptail --yesno "Select either tr-108, or tr-109?" --yes-button "TR-108" --no-button "TR-109"  20 60 --defaultno; then
-  echo "TR-109 Selected"
-  if whiptail --yesno "Enable EM?" --yes-button "Enable EM" --no-button "Disable EM"  20 60 --defaultno; then
-    echo "em = no"
-  else
-    echo "em = yes"
-  fi
-else
-  echo "TR-108 selected"
-  if whiptail --yesno "Enable Sensehat?" --yes-button "Enable Sensehat" --no-button "Disable Sensehat"  20 60 --defaultno; then
-    echo "sensehat = no"
-  else
-    echo "sensehat = yes"
-  fi
-fi
+}
 
-if whiptail --yesno "Monitor System ?" --yes-button "Enable Sensehat" --no-button "Disable Sensehat"  20 60 --defaultno; then
-    echo "system_vitals =  no"
-  else
-    echo "system_vitals = yes"
-fi
+aboutConfig=" This tool aims to easly initial configuration piCorderOs. ver#: $verInfo "                         
 
+while [ 1 ]
+do
 
-if whiptail --yesno "Monitor System ?" --yes-button "Enable BME6xx" --no-button "Disable BME6xx"  20 60 --defaultno; then
-  echo "bme = no"
-else
-  echo "bme = yes"
-fi
+CHOICE=$(
+whiptail --fb --nocancel --title "$title" --menu "" 20 60 5 \
+	"1)" "$txtMenu01"   \
+	"2)" "$txtMenu02"  \
+	"3)" "$txtabout " \
+	"0)" "$txtexit "  3>&2 2>&1 1>&3	
+)
 
-if whiptail --yesno "Enable amg8833?" --yes-button "Enable amg8833" --no-button "Disable amg8833"  20 600 --defaultno; then
-  echo "amg8833 = no"
-else
-  echo "amg8833 = yes"
-fi
-
-if whiptail --yesno "Enable amg8833?" --yes-button "Enable pocket geiger" --no-button "Disable pocket geiger"  20 60 --defaultno; then
-  echo "pocket_geiger = no"
-else
-  echo "pocket_geiger = yes"
-fi
-
-if whiptail --yesno "Enable ir thermo?" --yes-button "Enable ir thermo" --no-button "Disable ir thermo"  20 60 --defaultno; then
-  echo "ir_thermo  = no"
-else
-  echo "ir_thermo  = yes"
-fi
-
-if whiptail --yesno "Enable envirophat?" --yes-button "Enable envirophat" --no-button "Disable envirophat"  20 60 --defaultno; then
-  echo "envirophat  = no"
-else
-  echo "envirophat  = yes"
-fi
-echo ""
-echo " ---- A cut above - the test ----"
-echo "=================================="
+result=$(whoami)
+case $CHOICE in
+	"1)")   
+  myTestFun
+	;;
+	"2)")   
+		result="User $result: PG.2 "
+	;;
+	"3)")   
+		result="User $result: $aboutConfig "
+        ;;
+	"0)") exit
+        ;;
+esac
+whiptail --fb --msgbox "$result" 20 60
+done
+exit
