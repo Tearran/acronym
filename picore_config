@@ -20,7 +20,7 @@ txtHelloWorld=" Hello World: "
 txtexit="Exit "
 txtabout="About "
 txtContinueYN="Continue "
-txtRequierments="Install needed dependacies"
+txtRequierments="install needed dependencies"
 
 #[Vulcan]
 #txtHelloWorld="Tonk'peh panu  "
@@ -29,7 +29,7 @@ txtRequierments="Install needed dependacies"
 
 #[Names]
 txtMenu01="install TR-108"
-txtMenu02="install TR-109"
+txtMenu02="TODO: TR-109"
 
 
 
@@ -67,7 +67,7 @@ case $CHOICE in
   myTestFun
 	;;
 	"2)")   
-		result="User $result: PG.2 "
+		result="User $result: TODO "
 	;;
 	"3)")   
 		result="User $result: $aboutConfig "
