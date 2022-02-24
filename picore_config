@@ -6,6 +6,10 @@ border=white,black
 textbox=white,black
 button=white,black
 ' \
+clear
+echo "=================================="
+echo "     ---- Cut below ----"
+echo ""
 # emulating the hardware on a pc?
 if whiptail --yesno "emulating the hardware on a pc?" 10 100 --defaultno; then
   echo "pc = no"
@@ -66,3 +70,6 @@ if whiptail --yesno "Enable envirophat?" --yes-button "Enable envirophat" --no-b
 else
   echo "envirophat  = yes"
 fi
+echo ""
+echo " ---- A cut above - the test ----"
+echo "=================================="
