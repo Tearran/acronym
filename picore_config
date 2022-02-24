@@ -38,20 +38,19 @@ txtMenu02="TODO: TR-109"
 function myTestFun {
   
 if (whiptail --fb --title "$title" --yesno "$txtRequierments." 20 60); then
+	sudo apt update
+	sudo apt install -y git python3-pip python3-smbus
+	sudo apt install -y git libatlas-base-dev libopenjp2-7-dev libsdl2-dev libtiff5 libsdl-ttf2.0-dev 
+	sudo apt install -y libsdl-gfx1.2-5 libsdl-image1.2 libsdl-kitchensink1 libsdl-mixer1.2 libsdl-sound1.2 libsdl-ttf2.0-0 libsdl1.2debian libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0
 
-  result="$txtRequierments complete $?."
 else
-  result="User selected No, exit status was $?."
+	exit
 fi
 
 }
 
                       
 message="welcome to picorderOS" && whiptail --fb --msgbox --title "$title" "$txtWelcome" 25 80 
-sudo apt update
-sudo apt install -y git python3-pip python3-smbus
-sudo apt install -y git libatlas-base-dev libopenjp2-7-dev libsdl2-dev libtiff5 libsdl-ttf2.0-dev 
-sudo apt install -y libsdl-gfx1.2-5 libsdl-image1.2 libsdl-kitchensink1 libsdl-mixer1.2 libsdl-sound1.2 libsdl-ttf2.0-0 libsdl1.2debian libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0
 
 while [ 1 ]
 do
@@ -67,7 +66,7 @@ whiptail --fb --nocancel --title "$title" --menu "" 20 60 5 \
 result=$(whoami)
 case $CHOICE in
 	"1)")   
-  myTestFun
+  		myTestFun
 	;;
 	"2)")   
 		result="User $result: TODO "
