@@ -20,8 +20,8 @@ txtHelloWorld=" Hello World: "
 txtWelcome="This will install and confiure piCOrderOS"
 txtexit="Exit "
 txtabout="About "
-txtContinueYN="Continue "
-txtRequierments="install needed dependencies"
+txtContinueYN="[Yes] to Continue [no] to Exit "
+txtRequierments="Install needed dependencies? "
 aboutConfig=" This tool aims to easly initial configuration piCorderOs. ver#: $verInfo "   
 
 #[Vulcan]
@@ -37,7 +37,7 @@ txtMenu02="TODO: TR-109"
 
 function myTestFun {
   
-if (whiptail --fb --title "$title" --yesno "$txtRequierments." 20 60); then
+if (whiptail --fb --title "$title" --yesno "$txtRequierments $txtContinueYN" 20 60); then
 	sudo apt update
 	sudo apt install -y git python3-pip python3-smbus
 	sudo apt install -y git libatlas-base-dev libopenjp2-7-dev libsdl2-dev libtiff5 libsdl-ttf2.0-dev 
