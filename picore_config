@@ -1,71 +1,77 @@
 #!/bin/bash
+
+
 export NEWT_COLORS='
 root=white,black
 window=white,black
-border=white,black
 textbox=white,black
-button=white,black
-' \
+title=white,black
+listbox=white,black
+sellistbox=black,blue
+border=black,blue
+actbutton=black,green
+button=white,black'
+
 clear
 echo "=================================="
 echo "     ---- Cut below ----"
 echo ""
 # emulating the hardware on a pc?
-if whiptail --yesno "emulating the hardware on a pc?" 10 100 --defaultno; then
+if whiptail --yesno "emulating the hardware on a pc?" 20 60 --defaultno; then
   echo "pc = no"
 else
   echo "pc = yes"
 fi
 
 # select either tr-108, or tr-109. you must choose only one.
-if whiptail --yesno "Select either tr-108, or tr-109?" --yes-button "TR-108" --no-button "TR-109"  10 100 --defaultno; then
+if whiptail --yesno "Select either tr-108, or tr-109?" --yes-button "TR-108" --no-button "TR-109"  20 60 --defaultno; then
   echo "TR-109 Selected"
-  if whiptail --yesno "Enable EM?" --yes-button "Enable EM" --no-button "Disable EM"  10 100 --defaultno; then
+  if whiptail --yesno "Enable EM?" --yes-button "Enable EM" --no-button "Disable EM"  20 60 --defaultno; then
     echo "em = no"
   else
     echo "em = yes"
   fi
 else
   echo "TR-108 selected"
-  if whiptail --yesno "Enable Sensehat?" --yes-button "Enable Sensehat" --no-button "Disable Sensehat"  10 100 --defaultno; then
+  if whiptail --yesno "Enable Sensehat?" --yes-button "Enable Sensehat" --no-button "Disable Sensehat"  20 60 --defaultno; then
     echo "sensehat = no"
   else
     echo "sensehat = yes"
   fi
 fi
 
-if whiptail --yesno "Monitor System ?" --yes-button "Enable Sensehat" --no-button "Disable Sensehat"  10 100 --defaultno; then
+if whiptail --yesno "Monitor System ?" --yes-button "Enable Sensehat" --no-button "Disable Sensehat"  20 60 --defaultno; then
     echo "system_vitals =  no"
   else
     echo "system_vitals = yes"
 fi
 
 
-if whiptail --yesno "Monitor System ?" --yes-button "Enable BME6xx" --no-button "Disable BME6xx"  10 100 --defaultno; then
+if whiptail --yesno "Monitor System ?" --yes-button "Enable BME6xx" --no-button "Disable BME6xx"  20 60 --defaultno; then
   echo "bme = no"
 else
   echo "bme = yes"
 fi
 
-if whiptail --yesno "Enable amg8833?" --yes-button "Enable amg8833" --no-button "Disable amg8833"  10 100 --defaultno; then
+if whiptail --yesno "Enable amg8833?" --yes-button "Enable amg8833" --no-button "Disable amg8833"  20 600 --defaultno; then
   echo "amg8833 = no"
 else
   echo "amg8833 = yes"
 fi
 
-if whiptail --yesno "Enable amg8833?" --yes-button "Enable pocket geiger" --no-button "Disable pocket geiger"  10 100 --defaultno; then
+if whiptail --yesno "Enable amg8833?" --yes-button "Enable pocket geiger" --no-button "Disable pocket geiger"  20 60 --defaultno; then
   echo "pocket_geiger = no"
 else
   echo "pocket_geiger = yes"
 fi
 
-if whiptail --yesno "Enable ir thermo?" --yes-button "Enable ir thermo" --no-button "Disable ir thermo"  10 100 --defaultno; then
+if whiptail --yesno "Enable ir thermo?" --yes-button "Enable ir thermo" --no-button "Disable ir thermo"  20 60 --defaultno; then
   echo "ir_thermo  = no"
 else
   echo "ir_thermo  = yes"
 fi
 
-if whiptail --yesno "Enable envirophat?" --yes-button "Enable envirophat" --no-button "Disable envirophat"  10 100 --defaultno; then
+if whiptail --yesno "Enable envirophat?" --yes-button "Enable envirophat" --no-button "Disable envirophat"  20 60 --defaultno; then
   echo "envirophat  = no"
 else
   echo "envirophat  = yes"
