@@ -26,11 +26,10 @@ txtContinueYN="Continue "
 #txtexit="Ruken "
 #txtabout="Pa' nash "
 
-#[placeholders]
-txtMenu01="test embeded Yes No"
-txtMenu02="Menu item 2"
-txtMenu03="Menu item 3"
-txtMenu04="Menu item 4"
+#[Names]
+txtMenu01="install TR-108"
+txtMenu02="install TR-109"
+
 
 
 function myTestFun {
