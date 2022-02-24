@@ -1,4 +1,5 @@
-#! /bin/bash
+#!/bin/bash
+
 clear
 export NEWT_COLORS='
 root=white,black
@@ -20,8 +21,9 @@ txtHelloWorld=" Hello World: "
 txtWelcome="This will install and confiure piCOrderOS"
 txtexit="Exit "
 txtabout="About "
-txtContinueYN="[Yes] to Continue [no] to Exit "
-txtRequierments="Install needed dependencies? "
+txtContinueY="Continue"
+txtContinueN=" Exit "
+txtRequierments="Installing needed dependencies?" #PTODO list About subpage!?
 aboutConfig=" This tool aims to easly initial configuration piCorderOs. ver#: $verInfo "   
 
 #[Vulcan]
@@ -33,24 +35,29 @@ aboutConfig=" This tool aims to easly initial configuration piCorderOs. ver#: $v
 txtMenu01="install TR-108"
 txtMenu02="TODO: TR-109"
 
-
+#whiptail --fb --title "$title" --yesno "$txtRequierments" 8 78 --no-button "$txtContinueN" --yes-button "$txtContinueY"
 
 function myTestFun {
+ message="welcome to picorderOS" 
+if (whiptail --fb  --title "$title" --msgbox "$txtWelcome" 20 60);then
   
-if (whiptail --fb --title "$title" --yesno "$txtRequierments $txtContinueYN" 20 60); then
-	sudo apt update
-	sudo apt install -y git python3-pip python3-smbus
-	sudo apt install -y git libatlas-base-dev libopenjp2-7-dev libsdl2-dev libtiff5 libsdl-ttf2.0-dev 
-	sudo apt install -y libsdl-gfx1.2-5 libsdl-image1.2 libsdl-kitchensink1 libsdl-mixer1.2 libsdl-sound1.2 libsdl-ttf2.0-0 libsdl1.2debian libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0
+  if (whiptail --fb --title "$title" --yesno "$txtRequierments" 20 60 --no-button "$txtContinueN" --yes-button "$txtContinueY"); then
+  #	sudo apt update
+  #	sudo apt install -y git python3-pip python3-smbus
+  #	sudo apt install -y git libatlas-base-dev libopenjp2-7-dev libsdl2-dev libtiff5 libsdl-ttf2.0-dev 
+  #	sudo apt install -y libsdl-gfx1.2-5 libsdl-image1.2 libsdl-kitchensink1 libsdl-mixer1.2 libsdl-sound1.2 libsdl-ttf2.0-0 libsdl1.2debian libsdl2-2.0-0 libsdl2-gfx-1.0-0 libsdl2-image-2.0-0 libsdl2-mixer-2.0-0 libsdl2-ttf-2.0-0
+    echo " called $txtContinueY"
 
+  else
+	  echo " called $txtContinueN"
+  fi
 else
-	exit
+	echo " called error"
 fi
-
 }
 
                       
-message="welcome to picorderOS" && whiptail --fb --msgbox --title "$title" "$txtWelcome" 25 80 
+
 myTestFun
 while [ 1 ]
 do
@@ -72,7 +79,7 @@ case $CHOICE in
 		result="User $result: TODO "
 	;;
 	"3)")   
-		result="User $result: $aboutConfig "
+		result="$aboutConfig "
         ;;
 	"0)") exit
         ;;
