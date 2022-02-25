@@ -64,9 +64,9 @@ lsmod | grep i2c_
 echo " "
 
 echo "Downloading: picorderOs v2"  
-git clone https://github.com/directive0/picorderOS.git 
+git clone https://github.com/tearran/picorderOS.git 
 
-cd picorderOS/ && git checkout v2
+cd picorderOS/ && git checkout picorder-config
 
 echo "Create a requirements.txt to use with pip"
 
